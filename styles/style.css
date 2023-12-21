@@ -1,0 +1,11 @@
+#main > * {
+    display: none;
+}
+#main > :first-child {
+    display: block;
+}
+
+.content {
+    font-family: 'Amiri', serif;
+
+}

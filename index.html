@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hafalan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body class="my-5 container">
+    <header class="bg-dark row border border-2 rounded-4 p-5">
+      <div class="col-6 bg-dark border border-2 rounded-4 py-3 px-4">
+        <p class="text-white fs-3">Pilih Surah</p>
+        <div class="col col-3">
+          <form class="form d-flex" id="submitChapter">
+            <select class="form-select col-8" id="selectChapter"></select>
+            <input class="btn btn-success" type="submit" value="Mulai" />
+          </form>
+        </div>
+      </div>
+      <div class="col-6 row bg-dark border border-2 rounded-4 py-3 px-4">
+        <div class="col-6">
+          <div class="col">
+            <label for="true-counter" class="text-white">True Counter</label>
+            <div id="true-counter" class="fs-4 text-success">0</div>
+          </div>
+          <div class="col">
+            <label for="true-counter" class="text-white">False Counter</label>
+            <div id="false-counter" class="fs-4 text-danger">0</div>
+          </div>
+        </div>
+        <div class="col-6" id="chapterDetails">
+          <div class="fs-5" id="chapterId">
+            <label class="text-white" for="">Surat Ke: </label>
+            <button type="button" name="" id="chapterIdButton" class="btn btn-light">X</button>
+          </div>
+          <div class="fs-5" id="chapterNameId">
+            <label class="text-white" for="">Nama Surah: </label>
+            <button type="button" name="" id="chapterNameIdButton" class="btn btn-light">X</button>
+          </div>
+          <div class="fs-5" id="chapterPage">
+            <label class="text-white" for="">Halaman: </label>
+            <button type="button" name="" id="chapterPageButton" class="btn btn-light">X</button>
+          </div>
+          <div class="fs-5" id="chapterVersesCount">
+            <label class="text-white" for="">Jumlah Surah: </label>
+            <button type="button" name="" id="chapterVersesCountButton" class="btn btn-light">X</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-dark container mt-3 border border-2 rounded-4 p-5 col">
+      <section id="main" class="p-2"></section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./dist/interfaces/response.js"></script>
+
+    <script src="./dist/environment.js"></script>
+    <script src="./dist/cache.js"></script>
+    <script src="./dist/form.js"></script>
+    <script src="./dist/html.js"></script>
+    <script src="./dist/server.js"></script>
+    <script src="./dist/utility.js"></script>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
