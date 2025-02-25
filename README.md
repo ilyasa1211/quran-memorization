@@ -1,9 +1,12 @@
 # Hafalan Quran
 
 Status: Unfinished
+
 Main Purpose: A webpage that is interactive and fun for memorizing Qur'an
+
 Tools:
-  - Angular
+  - NextJs
+
 Features:
   - Read Quran
   - Interactive Memorize
